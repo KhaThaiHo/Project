@@ -54,13 +54,13 @@ và một số Keyword mới mà ta có thể khai thác làm thuộc tính như
 
 ### Tiền xử lý dữ liệu và Xây dựng đặc trưng
 **Tổng quan:** Ở giai đoạn này, ta sẽ thực hiện:
-- Nếu các giá trị từ Dataframe ban đầu là null, ta sẽ điền các giá trị từ bên phải (Dữ liệu lấy từ Mô tả) vừa xây dựng bên trên vào
+- Nếu các giá trị từ Dataframe ban đầu là null, ta sẽ điền các giá trị từ bên phải (Dữ liệu lấy từ Mô tả) vừa xây dựng bên trên vào.
 - Xây dựng và áp dụng các hàm chuyển đổi các Thuộc tính như: Area (Diện tích), PN (Số Phòng ngủ),... từ dạng object (string)
-về dạng số
-- Xóa bỏ các Duplicates
+về dạng số.
+- Xóa bỏ các Duplicates.
 - Nhận thấy trực quan các giá trị Price có đơn vị chưa chính xác, ta sẽ Format các giá trị về bằng cách đưa các số lớn hơn > 1 tỷ / 1 tỷ, >1 triệu / 1 triệu,...
 - Xử lý các Outliers (của Price, WC, PN, Area) bằng Percentile.
-- Fill các giá trị null của các thuộc tính số bằng K-Neighbor Regressor
+- Fill các giá trị null của các thuộc tính số bằng K-Neighbor Regressor.
 - Xử lý các giá trị Categorical:
   + Chuyển dạng một vài giá trị của thuộc tính "SoSach" về dạng "Có", "Không", sau đó chuyển các giá trị chưa biết thành "Unknown".
   + Dùng Target Encoding cho các thuộc tính "Type" (Loại nhà), "district" (Vị trí), "SoSach" (Pháp lý).
